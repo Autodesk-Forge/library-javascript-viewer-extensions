@@ -1,0 +1,47 @@
+
+.browser-scene {
+    width: 1430px;
+    height: 800px;
+    pointer-events: auto;
+}
+
+.browser-scene iframe{
+    display: block;
+}
+
+.browser-scene .address-bar{
+    height: 30px;
+}
+
+.browser-scene .input-url {
+    width: calc(100% - 10px);
+    padding: 3px;
+}
+
+.weather-scene {
+    width: 1430px;
+    height: 800px;
+}
+
+.weather-scene .title {
+    pointer-events: auto;
+    height: 30px;
+}
+
+.weather-scene .controls {
+    pointer-events: auto;
+    margin-bottom: 10px;
+    height: 30px;
+}
+
+.weather-scene .btn-location {
+    height: 17px;
+    vertical-align: top;
+}
+
+.weather-scene .input-latlong {
+    width: calc(100% - 143px);
+    background-color: white;
+    border-radius: 4px;
+    padding: 3px;
+}

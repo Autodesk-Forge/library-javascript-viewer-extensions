@@ -1,0 +1,122 @@
+
+.markup {
+    top: 10px;
+    left: 10px;
+    width: 300px;
+    height: 350px;
+    resize: auto;
+}
+
+.markup .container {
+    height: calc(100% - 50px);
+    width: calc(100% - 24px);
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 0;
+}
+
+.markup .switch-container {
+    float: left;
+    margin-right: 28px;
+}
+
+.markup .dropdown-mode-container {
+    float: left;
+    margin-top: 1px;
+    margin-bottom: 10px;
+}
+
+.markup .input {
+    height: 14px;
+    margin-left: 2px;
+    margin-top: 0px;
+    border-radius:5px;
+    vertical-align: top;
+    width: calc(100% - 88px);
+}
+
+.markup .styles {
+    width: calc(100% - 84px);
+    margin-left: 6px;
+    height: 20px;
+}
+
+.markup .btn {
+    height: 6px;
+    line-height: 0;
+    vertical-align: top;
+}
+
+.markup .btn-dropdown {
+    width: 170px;
+    height: 10px;
+}
+
+.markup .btn-span {
+    margin-right: 0px;
+    line-height: 0.3;
+    top: 1px;
+}
+
+.markup .btn-row {
+    width: 63px;
+}
+
+.markup .btn-span-list {
+    margin-right: 0px;
+    line-height: 0.3;
+    top: 1px;
+}
+.markup .btn-list {
+    margin-top: -8px;
+    float: right;
+}
+.minimized {
+    height: 34px;
+    min-height: 34px
+}
+
+.markup .v-spacer {
+    border-width: 0px;
+    margin: 2px;
+}
+
+.markup .v-spacer-large {
+    border-width: 0px;
+    margin: 10px;
+}
+
+.markup .list-group-item {
+    width: calc(100% - 20px);
+    height: 4px;
+    line-height: 0.3;
+    border-radius: 4px;
+    margin-top: 0px;
+    margin-bottom: 2px;
+    padding-right: 2px;
+    background-color: #F0F0F0;
+}
+
+.markup .view-mode .list-group-item {
+
+    cursor: pointer;
+}
+
+.markup .view-mode .list-group-item.enabled {
+
+    border: 1px solid #42C542;
+    background-color: #42C542;
+}
+
+.markup .view-mode .list-group-item.enabled:hover{
+
+    border: 1px solid #42C542;
+    background-color: #41E641;
+}
+
+.markup .view-mode .list-group-item:hover {
+
+    border: 1px solid #34AFD4;
+    background-color: #34AFD4;
+}

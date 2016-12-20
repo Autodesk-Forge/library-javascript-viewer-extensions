@@ -1,0 +1,141 @@
+
+.model-loader {
+  top: 0px;
+  left: 0px;
+  width: 315px;
+  height: 550px;
+  resize: auto;
+}
+
+.model-loader .container {
+  height: calc(100% - 50px);
+  width: 100%;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.model-loader.minimized {
+  height: 34px;
+  min-height: 34px;
+}
+
+.model-loader .input {
+  height: 16px;
+  margin-left: 2px;
+  margin-bottom: 4px;
+  margin-top: 0px;
+  border-radius:5px;
+  vertical-align: top;
+}
+
+.model-loader .input.token {
+  width: 80px;
+}
+
+.model-loader .input.urn {
+  width: calc(100% - 210px);
+}
+
+.model-loader .input.numeric {
+  width: 84px;
+}
+
+.model-loader .input.search {
+  width: 180px;
+  margin-right: 2px;
+}
+
+.model-loader .btn {
+  height: 6px;
+  line-height: 0;
+  vertical-align: top;
+}
+
+.model-loader .btn-load {
+    width: 50px;
+}
+
+.model-loader .btn-transform {
+    margin-left: 2px;
+    width: 160px;
+    top:2px;
+    margin-right:2px;
+}
+
+.model-loader .btn-clear {
+    width: 60px;
+    top:2px;
+}
+
+.model-loader .btn-load-gallery {
+    width: 62px;
+    top:2px;
+}
+
+.model-loader .btn-span {
+ margin-right: 4px;
+ line-height: 0;
+ top: 2px;
+}
+
+.all-trees-container {
+  height: calc(100% - 250px);
+}
+
+.model-loader .tree-container {
+  width: calc(100% - 28px);
+  overflow-y: auto;
+}
+
+.model-loader .tree-container.gallery {
+  max-height: 160px;
+}
+
+.model-loader .tree-container.loaded {
+  height: calc(100% - 40px);
+}
+
+.model-loader .v-spacer {
+  border-width: 0px;
+  margin: 2px;
+}
+
+.model-loader .v-spacer-large {
+  border-width: 0px;
+  margin: 12px;
+}
+
+.model-loader .tree-spacer {
+  margin: 5px;
+  width: 260px;
+}
+
+.model-loader .text-span {
+  color: white;
+}
+
+.inspire-tree a {
+  cursor: default;
+  display: block;
+  height: 25px;
+  line-height: 25px;
+  color: cyan;
+  text-decoration: none;
+}
+
+.inspire-tree a:hover {
+  color: black;
+  text-decoration: none;
+}
+
+.inspire-tree .focused > div > a,
+.inspire-tree .selected > div > a {
+  color: black;
+}
+
+.itree-menu a,
+.itree-menu a:hover {
+ color: black;
+ text-decoration: none;
+}

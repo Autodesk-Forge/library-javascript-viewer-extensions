@@ -1,0 +1,26 @@
+
+.custom-tree {
+    top: 10px;
+    right: 10px;
+    width: 370px;
+    height: 350px;
+    resize: auto;
+}
+
+.custom-tree .container {
+    overflow-y: auto;
+    overflow-x: hidden;
+    height: calc(100% - 45px);
+}
+
+.custom-tree .treeview label {
+    color: aliceblue;
+}
+
+.custom-tree .treeview group.collapsed > header > icon {
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAOBAMAAADtZjDiAAAAMFBMVEUAAAD///////////////////////////////////////////////////////////87TQQwAAAAEHRSTlMAzMmxNiAMA8K+mpJ/dltN+nADFwAAACpJREFUCNdjwAS8BRCacRuUFg6A0IJToLTQByj9AEK3oKpbBtHHU4DFcABnMAZ0F9EX7QAAAABJRU5ErkJggg==);
+}
+
+.custom-tree .treeview group.expanded > header > icon {
+    background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAOAgMAAABiJsVCAAAACVBMVEUAAAD///////9zeKVjAAAAA3RSTlMAzGWg4clLAAAAI0lEQVQI12PAABwgQgVETAFiphAgwQkiVEHEVCDBFBqCrgcAZhoDgXsV370AAAAASUVORK5CYII=);
+}

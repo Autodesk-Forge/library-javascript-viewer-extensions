@@ -1,0 +1,12 @@
+.react-demo-panel {
+    top: 10px;
+    left: 10px;
+    width: 260px;
+    height: 310px;
+    resize: auto;
+    background-color: white;
+}
+
+.react-demo-panel:hover {
+    background-color: white;
+}

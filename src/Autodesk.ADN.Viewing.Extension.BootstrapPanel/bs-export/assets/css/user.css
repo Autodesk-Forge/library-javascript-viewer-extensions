@@ -1,0 +1,105 @@
+.panel-container{
+  max-width:580px;
+  margin:50px;
+  padding:10px;
+  background-color:#F1F1F1;
+  border-style:solid;
+  border-width:1px;
+  border-radius:25px;
+  border-color:#1A1FC1;
+}
+
+@media (max-width:480px) {
+  .input-row-spacer{
+    float:left;
+    width:1px;
+    min-height:1px;
+  }
+}
+
+@media (min-width:481px) {
+  .input-row-spacer{
+    float:left;
+    width:10px;
+    min-height:1px;
+  }
+}
+
+.btn-gallery-home{
+  min-width:160px;
+}
+
+.input-row-label-container{
+  float:left;
+  width:54px;
+}
+
+.input-row-label{
+  vertical-align:bottom;
+  background-color:#F1F1F1;
+  color:black;
+}
+
+.input-input-row{
+  border-radius:4px;
+  height:24px;
+}
+
+.btn-input-row{
+  width:80px;
+  height:24px;
+  padding:0;
+  top:0;
+  vertical-align:top;
+  line-height:0;
+}
+
+.span-input-row{
+  top:-1px;
+  vertical-align:middle;
+}
+
+hr.hr-panel{
+  border-top:1px solid #1A1FC1;
+  margin-right:5px;
+  margin-left:5px;
+}
+
+hr.panel-vertical-spacer{
+  margin:10px;
+  border-top:1px;
+}
+
+div.panel-validation-controls-container{
+  position:relative;
+  float:right;
+  right:20px;
+}
+
+@media (max-width:480px) {
+  .btn-sign-in{
+    margin-top:8px;
+  }
+}
+
+@media (min-width:481px) {
+  .btn-sign-in{
+    float:right;
+    margin-top:8px;
+    margin-right:184px;
+  }
+}
+
+input.input-sign-in{
+  width:100%;
+}
+
+.radio-input-row{
+  margin-top:0px;
+  margin-bottom:0px;
+}
+
+.radio + .radio{
+  margin-top:0px;
+}
+
