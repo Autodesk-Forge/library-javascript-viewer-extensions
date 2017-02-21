@@ -208,9 +208,9 @@ Autodesk.ADN.Viewing.Extension.CSSRenderer =
         };
 
         var max = {
-          x: Number.MIN_VALUE,
-          y: Number.MIN_VALUE,
-          z: Number.MIN_VALUE
+          x: -Number.MAX_VALUE,
+          y: -Number.MAX_VALUE,
+          z: -Number.MAX_VALUE
         };
 
         for(var i=0; i<face.vertices.length; ++i) {
