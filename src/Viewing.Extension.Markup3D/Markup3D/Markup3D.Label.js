@@ -293,11 +293,17 @@ export default class LabelMarker extends GraphicMarker {
 
     $container.append(html)
 
-    //$container.find('label[data-toggle="tooltip"]').tooltip({
-    //  container: 'body',
-    //  animated: 'fade',
-    //  html: true
-    //})
+    const $target = $container.find('label[data-toggle="tooltip"]')
+
+    if ($target.tooltip) {
+
+      $target.tooltip({
+        container: 'body',
+        animated: 'fade',
+        html: true
+      })
+    }
+
 
     this.bindSwitch =
       new SwitchButton('#' + bindSwitchId,

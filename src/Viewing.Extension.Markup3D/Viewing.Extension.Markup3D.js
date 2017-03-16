@@ -195,6 +195,8 @@ class Markup3DExtension extends ExtensionBase {
       this.markup3DTool.getName())
 
     console.log('Viewing.Extension.Markup3D unloaded')
+
+    return true
   }
 
   /////////////////////////////////////////////////////////////////

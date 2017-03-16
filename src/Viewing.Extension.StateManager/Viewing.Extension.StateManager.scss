@@ -9,7 +9,7 @@
 
 .state-manager .container {
   height: calc(100% - 55px);
-  width: 100%;
+  width: calc(100% - 20px);
   padding-top: 10px;
   padding-left: 10px;
   padding-right: 10px;
@@ -22,24 +22,20 @@
   margin-top: 6px;
 }
 
-.state-manager .btn {
-  height: 18px;
-  line-height: 0;
-  vertical-align: top;
-}
 
 .state-btn-list {
   line-height: 0;
   vertical-align: top;
-  margin-top: -7px;
+  margin-top: -1px;
   float: right;
-  margin-right: -7px;
+  margin-right: 0px;
+  height: 8px;
 }
 
 .state-manager .btn-save {
   border: 1px solid #aeaeae;
   float: left;
-  height: 20px;
+  height: 16px;
   margin-right: 4px;
   padding-top: 0;
 }
@@ -47,7 +43,7 @@
 .state-manager .input-name {
   border: 1px solid #aeaeae;
   border-radius: 4px;
-  width: calc(100% - 118px);
+  width: calc(100% - 122px);
   height: 20px;
 }
 
@@ -83,27 +79,26 @@
 }
 
 .state-list-group-item {
-  width: calc(100% - 2px);
-  height: 26px;
-  line-height: 0.3;
+  width: calc(100% - 12px);
+  height: 19px;
+  line-height: .3;
   border-radius: 4px;
   margin-top: 1px;
   margin-bottom: 0;
-  background-color: #E8E8E8;
+  background-color: #e8e8e8;
   border: 1px solid #aeaeae;
   cursor: pointer;
   position: relative;
   display: block;
-  padding: 10px 10px;
+  padding: 4px;
 }
 
 .state-list-group-item label {
-  width: calc(100% - 45px)!important;
   overflow-x: hidden;
-  margin-top: -4px;
+  margin-top: 4px;
   position: relative;
-  height: 15px;
-  line-height: 0.9;
+  height: 20px;
+  line-height: .9;
   font-weight: inherit;
   font-size: 13px;
   white-space: nowrap;

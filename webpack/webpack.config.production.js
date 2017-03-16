@@ -128,8 +128,9 @@ module.exports = {
                 exclude: /node_modules/,
                 loader: 'babel',
                 query: {
-                    cacheDirectory: true,
-                    presets: ['es2015', 'stage-0', 'react']
+                  cacheDirectory: true,
+                  presets: ['es2015', 'stage-0', 'react'],
+                  plugins: ['transform-runtime']
                 }
             },
             { test: /\.scss$/, loaders: ["style", "css", "sass"] },

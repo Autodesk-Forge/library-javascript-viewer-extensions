@@ -21,7 +21,7 @@ export default class StatesAPI extends ClientAPI {
   ///////////////////////////////////////////////////////////////
   async getSequence(modelId) {
 
-  var url = this.apiUrl + `/${modelId}/states/sequence`
+  var url = this.apiUrl + `/models/${modelId}/states/sequence`
 
   return this.ajax(url)
 }
@@ -32,7 +32,7 @@ export default class StatesAPI extends ClientAPI {
   ///////////////////////////////////////////////////////////////
   getStates(modelId) {
 
-    var url = this.apiUrl + `/${modelId}/states`
+    var url = this.apiUrl + `/models/${modelId}/states`
 
     return this.ajax(url)
   }
@@ -47,7 +47,7 @@ export default class StatesAPI extends ClientAPI {
       sequence: sequence
     }
 
-    var url = this.apiUrl + `/${modelId}/states/sequence`
+    var url = this.apiUrl + `/models/${modelId}/states/sequence`
 
     return this.ajax({
       url: url,
@@ -70,7 +70,7 @@ export default class StatesAPI extends ClientAPI {
       state: state
     }
 
-    var url = this.apiUrl + `/${modelId}/states`
+    var url = this.apiUrl + `/models/${modelId}/states`
 
     return this.ajax({
       url: url,
@@ -89,7 +89,7 @@ export default class StatesAPI extends ClientAPI {
   ///////////////////////////////////////////////////////////////
   removeState(modelId, stateId) {
 
-    var url = this.apiUrl + `/${modelId}/states/${stateId}/remove`
+    var url = this.apiUrl + `/models/${modelId}/states/${stateId}/remove`
 
     return this.ajax({
       url: url,
