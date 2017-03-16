@@ -63,10 +63,10 @@ module.exports = {
     },
 
     output: {
-        path: path.join(__dirname, '../../App/dynamic/extensions'),
-        filename: "[name]/[name].min.js",
-        libraryTarget: "umd",
-        library: "[name]"
+      path: path.join(__dirname, './dist'),
+      filename: "[name]/[name].min.js",
+      libraryTarget: "umd",
+      library: "[name]"
     },
 
     plugins: [

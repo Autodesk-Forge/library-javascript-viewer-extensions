@@ -69,7 +69,7 @@ module.exports = {
   },
 
   output: {
-    path: path.join(__dirname, '../../App/dynamic/extensions'),
+    path: path.join(__dirname, './dist'),
     filename: "[name]/[name].js",
     libraryTarget: "umd",
     library: "[name]",
