@@ -10,7 +10,29 @@ Some extensions are dependent on specific files which are placed in the same dir
 extension, using a simple script tag in your html or dynamically using require or equivalent.
 The path of dependencies needs to be modified accordingly to your setup.
 
-##Setup/Usage Instructions
+##Setup
+
+The extensions on this sample were writte with ES6 sytanx, so it needs transpiling before it can be used. 
+
+Install [NodeJS](https://nodejs.org). 
+
+Clone this project or download it. It's recommended to install [GitHub desktop](https://desktop.github.com/). To clone it via command line, use the following (**Terminal** on MacOSX/Linux, **Git Shell** on Windows):
+
+    git clone https://github.com/Autodesk-Forge/library-javascript-viewer-extensions
+    
+Navigate to the folder and run **install** to download all the required dependencies:
+
+    npm install
+
+By default, right after **install**, the build script should will run automatically, which will build the minified JavaScript files. If not (or to run in manually later), use the following:
+
+    npm run build-prod
+
+This will create a folder */App/dynamic/extensions/* with one folder for each extension, inside will be a minified version, for instance **Viewing.Extension.Markup3D.min.js** (note the suffix .min.js).
+
+Once build, the extension file can be copied to your project, regardless the backend programming language used. NodeJS is not required to run them. For instance, it's safe to copy to a ASP.NET project and use the **.min.js** extension file. Some extensions may require a backend implementation, see comments for each extension.
+
+##Usage Instructions
 
 There are two ways to load an extension with viewer API:
 
@@ -28,14 +50,14 @@ There are two ways to load an extension with viewer API:
             loadDocument(viewer, options.document);
         });
 
-Please refer to [this sample](https://github.com/Developer-Autodesk/tutorial-aspnet-view.and.data.api/blob/master/FirstViewerWebApp/FirstViewerWebApp/Scripts/Viewer.js) for detail.
-
 * Load extensions dynamically on demand:
 
 		//load extension for SEO
 		viewer.loadExtension('Autodesk.ADN.Viewing.Extension.SEO');
 
 Please refer to [this blog post](http://adndevblog.typepad.com/cloud_and_mobile/2014/10/how-to-write-custom-extensions-for-the-large-model-viewer.html) for detail.
+
+Depending on the extension, some additional parameters may be required to properly load it. In these cases, the **loadExtension** method is prefered. See comments below for each extension.
 
 ##Description
 
@@ -97,6 +119,10 @@ Creates a simple docking panel containing an iframe.
 
 Iterates through layers. Valid only for 2D drawings.
 
+* **Autodesk.ADN.Viewing.Extension.Markup3D**
+
+Add 3D markups on a 3D model. Uses StateManager extension to save & restore markups.
+
 * **[Autodesk.ADN.Viewing.Extension.Material](http://viewer.autodesk.io/node/gallery/embed?id=546bf4493a5629a0158bc3a4&extIds=Autodesk.ADN.Viewing.Extension.Material)**
 
 Changes material of selected component. Supports color and textures.
@@ -153,6 +179,17 @@ Inserts custom data into viewer property panel.
 
 Uses microsoft translation API to translate property panel values on the fly.
 
+* **Autodesk.ADN.Viewing.Extension.StateManager**
+
+Save and restore states of the viewer (position, markups, rotation, zoom, etc). This extension requires a backend implementation to store the states. To load it on viewer, use the **loadExtension** method with the following parameters: **apiUrl** that specifies the endpoints to call to save & restore states; and model._id that is passed to identify the model.
+
+    viewer.loadExtension('Viewing.Extension.StateManager', 
+      {
+        apiUrl: 'http://localhost:3000/api/',
+        model: {_id: 'YourModelUrn'}
+      }
+    );
+
 * **Autodesk.ADN.Viewing.Extension.SEO**
 
 Ouputs the properties values into a hidden div tag so that the properties can be indexed by search engine
@@ -187,7 +224,7 @@ This sample is licensed under the terms of the [MIT License](http://opensource.o
 
 ##Written by 
 
-Written by [Philippe Leefsma](http://adndevblog.typepad.com/cloud_and_mobile/philippe-leefsma) 
+Written by [Philippe Leefsma](https://forge.autodesk.com/author/philippe-leefsma) 
 
 
 
