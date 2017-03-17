@@ -1,16 +1,16 @@
 # library-javascript-viewer-extensions
 
-##Description
+## Description
 
 A collection of various JavaScript extensions for the viewer, showing what is doable with the client-side JavaScript API.
 
-##Dependencies
+## Dependencies
 
 Some extensions are dependent on specific files which are placed in the same directory. Dependencies need to be loaded before loading the
 extension, using a simple script tag in your html or dynamically using require or equivalent.
 The path of dependencies needs to be modified accordingly to your setup.
 
-##Setup
+## Setup
 
 The extensions on this sample were writte with ES6 sytanx, so it needs transpiling before it can be used. 
 
@@ -32,7 +32,7 @@ This will create a folder */App/dynamic/extensions/* with one folder for each ex
 
 Once build, the extension file can be copied to your project, regardless the backend programming language used. NodeJS is not required to run them. For instance, it's safe to copy to a ASP.NET project and use the **.min.js** extension file. Some extensions may require a backend implementation, see comments for each extension.
 
-##Usage Instructions
+## Usage Instructions
 
 There are two ways to load an extension with viewer API:
 
@@ -222,7 +222,7 @@ A demo extension which illustrates several concepts of the API. See the complete
 
 This sample is licensed under the terms of the [MIT License](http://opensource.org/licenses/MIT). Please see the [LICENSE](LICENSE) file for full details.
 
-##Written by 
+## Written by 
 
 Written by [Philippe Leefsma](https://forge.autodesk.com/author/philippe-leefsma) 
 
