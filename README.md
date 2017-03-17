@@ -59,7 +59,7 @@ Please refer to [this blog post](http://adndevblog.typepad.com/cloud_and_mobile/
 
 Depending on the extension, some additional parameters may be required to properly load it. In these cases, the **loadExtension** method is prefered. See comments below for each extension.
 
-##Description
+## Description
 
 Here is a quick description of what each extension is doing. Click on each extension name to test them directly on the [gallery](http://viewer.autodesk.io/node/gallery/#/home)
 
