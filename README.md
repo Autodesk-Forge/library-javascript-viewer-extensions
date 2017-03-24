@@ -12,7 +12,7 @@ The path of dependencies needs to be modified accordingly to your setup.
 
 ## Setup
 
-The extensions on this sample were writte with ES6 sytanx, so it needs transpiling before it can be used. 
+The extensions on this sample were written with ES6 sytanx, so it needs transpiling before it can be used.
 
 Install [NodeJS](https://nodejs.org). 
 
