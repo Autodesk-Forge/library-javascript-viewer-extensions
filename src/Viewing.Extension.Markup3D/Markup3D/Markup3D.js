@@ -248,9 +248,12 @@ export default class Markup3D extends EventsEmitter {
   //
   //
   /////////////////////////////////////////////////////////////////
-  onTrackerModified (screenPoint) {
+  onTrackerModified (e) {
 
-    this.startPoint = screenPoint
+    this.startPoint = {
+      x: e.screenPoint.x,
+      y: e.screenPoint.y
+    }
 
     if (this.occlusion && this.checkOcclusion()) {
 
@@ -297,7 +300,7 @@ export default class Markup3D extends EventsEmitter {
         dist.y * dist.y +
         dist.z * dist.z
 
-     if(d > 25.0){
+     if(d > 25){
 
        return true
      }
@@ -321,20 +324,21 @@ export default class Markup3D extends EventsEmitter {
       dir.y = dir.y / norm
     }
 
-    var leaderEndPoint = {
+    const start = {
+      x: this.startPoint.x + dir.x * 20,
+      y: this.startPoint.y + dir.y * 20
+    }
+
+    var end = {
       x: this.startPoint.x + dir.x * Math.max(50, norm - 50),
       y: this.startPoint.y + dir.y * Math.max(50, norm - 50)
     }
 
-    this.leader.update({
-        x: this.startPoint.x + dir.x * 20,
-        y: this.startPoint.y + dir.y * 20
-      },
-      leaderEndPoint)
+    this.leader.update(start, end)
 
     this.labelMarker.setScreenPoint({
-      x: leaderEndPoint.x + (dir.x > 0 ? -dir.x * 50 : dir.x * 50),
-      y: leaderEndPoint.y + (dir.y > 0 ? 20 : -30)
+      x: end.x + (dir.x > 0 ? -dir.x * 50 : dir.x * 50),
+      y: end.y + (dir.y > 0 ? 20 : -30)
     })
   }
 

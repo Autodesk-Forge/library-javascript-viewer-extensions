@@ -49,7 +49,7 @@ export default class Leader {
   //
   //
   /////////////////////////////////////////////////////////////////
-  setVisible(show){
+  setVisible (show) {
 
     return new Promise((resolve, reject)=> {
 
@@ -104,7 +104,7 @@ export default class Leader {
   //
   //
   /////////////////////////////////////////////////////////////////
-  update(startPoint, endPoint) {
+  update (startPoint, endPoint) {
 
     this.startPoint = startPoint
     this.endPoint = endPoint
@@ -121,7 +121,7 @@ export default class Leader {
   //
   //
   /////////////////////////////////////////////////////////////////
-  draw(){
+  draw () {
 
     var startPoint = {
       x: this.endPoint.x - this.scaleFactor * this.dir.x,
