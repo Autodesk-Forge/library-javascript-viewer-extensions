@@ -52,9 +52,6 @@ module.exports = {
         'Viewing.Extension.PointCloud':
             './src/Viewing.Extension.PointCloud/Viewing.Extension.PointCloud.js',
 
-        'Viewing.Extension.TypeScript':
-            './src/Viewing.Extension.TypeScript/Viewing.Extension.TypeScript.js',
-
         'Viewing.Extension.Transform':
             './src/Viewing.Extension.Transform/Viewing.Extension.Transform.js',
 

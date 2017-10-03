@@ -49,9 +49,6 @@ module.exports = {
     'Autodesk.ADN.Viewing.Extension.React':
       './src/Autodesk.ADN.Viewing.Extension.React/Autodesk.ADN.Viewing.Extension.React.js',
 
-    'Viewing.Extension.TypeScript':
-      './src/Viewing.Extension.TypeScript/Viewing.Extension.TypeScript.js',
-
     'Viewing.Extension.CustomModelStructure':
       './src/Viewing.Extension.CustomModelStructure/Viewing.Extension.CustomModelStructure.js',
 
