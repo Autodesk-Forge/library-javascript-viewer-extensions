@@ -4,7 +4,9 @@
 
 This repo is no longer maintained, most of the extensions are still valid however use them at your own risk.
 
-For a more up-to-date set of Forge Viewer extensions take a look there: [Viewer.Extensions.Dynamic](https://github.com/Autodesk-Forge/forge-rcdb.nodejs/tree/master/src/client/viewer.components/Viewer.Extensions.Dynamic)in Forge RCDB.
+For a more up-to-date set of Forge Viewer extensions take a look there:
+
+[Viewer.Extensions.Dynamic](https://github.com/Autodesk-Forge/forge-rcdb.nodejs/tree/master/src/client/viewer.components/Viewer.Extensions.Dynamic) from the [Forge RCDB](https://forge-rcdb.autodesk.io/configurator) project.
 
 
 ## Description
