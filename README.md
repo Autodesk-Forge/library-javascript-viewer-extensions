@@ -14,7 +14,7 @@ For a more up-to-date set of Forge Viewer extensions take a look there:
 A collection of various JavaScript extensions for the viewer, showing what is doable with the client-side JavaScript API.
 
 
-## Thumbnail
+### Thumbnail
 
 ![thumbnail](img/thumbnail.png)
 
