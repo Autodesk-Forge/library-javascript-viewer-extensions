@@ -13,6 +13,11 @@ For a more up-to-date set of Forge Viewer extensions take a look there:
 
 A collection of various JavaScript extensions for the viewer, showing what is doable with the client-side JavaScript API.
 
+
+## Thumbnail
+
+![thumbnail](img/thumbnail.png)
+
 ## Dependencies
 
 Some extensions are dependent on specific files which are placed in the same directory. Dependencies need to be loaded before loading the
