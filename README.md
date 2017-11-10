@@ -196,6 +196,8 @@ Illustrates on to create a docking panel more advanced than the basic docking pa
 
 A demo extension which illustrates several concepts of the API. See the complete [tutorial](https://github.com/Developer-Autodesk/tutorial-getting.started-view.and.data) for more details.
 
+![thumbnail](/default.png)
+
 ## License
 
 This sample is licensed under the terms of the [MIT License](http://opensource.org/licenses/MIT). Please see the [LICENSE](LICENSE) file for full details.
